@@ -21,11 +21,16 @@ xcuserdata/
 *.moved-aside
 *.xcuserstate
 
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
 *.dSYM.zip
 *.dSYM
+*/Pods/
+*/chenpeng/
+Targets Support Files/
+*User Interface State
 
 ## Playgrounds
 timeline.xctimeline
