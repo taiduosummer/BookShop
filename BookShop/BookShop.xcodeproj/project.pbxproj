@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C49A0BF354C6DAC144D873AA /* Pods_BookShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06BF250A85C07F6CF9CAF11 /* Pods_BookShop.framework */; };
+		FF04A8281D29FD6600CD539C /* apiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04A8271D29FD6600CD539C /* apiConfig.swift */; };
 		FF3EA8BA1D2679B600AFB8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EA8B91D2679B600AFB8B4 /* AppDelegate.swift */; };
 		FF3EA8BC1D2679B600AFB8B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EA8BB1D2679B600AFB8B4 /* ViewController.swift */; };
 		FF3EA8BF1D2679B600AFB8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3EA8BD1D2679B600AFB8B4 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		181A44AC4E0679001921F8D9 /* Pods-BookShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookShop/Pods-BookShop.release.xcconfig"; sourceTree = "<group>"; };
 		74BEAC5A1B43AC538A79BA3C /* Pods-BookShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShop/Pods-BookShop.debug.xcconfig"; sourceTree = "<group>"; };
 		D06BF250A85C07F6CF9CAF11 /* Pods_BookShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF04A8271D29FD6600CD539C /* apiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = apiConfig.swift; path = apiConfig/apiConfig.swift; sourceTree = "<group>"; };
 		FF3EA8B61D2679B600AFB8B4 /* BookShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3EA8B91D2679B600AFB8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF3EA8BB1D2679B600AFB8B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF04A8241D29FB7500CD539C /* file */ = {
+			isa = PBXGroup;
+			children = (
+				FF3EA8C51D2679B600AFB8B4 /* Info.plist */,
+				FF3EA8C21D2679B600AFB8B4 /* LaunchScreen.storyboard */,
+				FF3EA8C01D2679B600AFB8B4 /* Assets.xcassets */,
+				FF3EA8BD1D2679B600AFB8B4 /* Main.storyboard */,
+			);
+			name = file;
+			sourceTree = "<group>";
+		};
+		FF04A8251D29FC2200CD539C /* class */ = {
+			isa = PBXGroup;
+			children = (
+				FF3EA8B91D2679B600AFB8B4 /* AppDelegate.swift */,
+				FF3EA8BB1D2679B600AFB8B4 /* ViewController.swift */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+		FF04A8261D29FD3600CD539C /* APIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				FF04A8271D29FD6600CD539C /* apiConfig.swift */,
+			);
+			name = APIConfig;
+			sourceTree = "<group>";
+		};
 		FF3EA8AD1D2679B600AFB8B4 = {
 			isa = PBXGroup;
 			children = (
@@ -69,12 +99,9 @@
 		FF3EA8B81D2679B600AFB8B4 /* BookShop */ = {
 			isa = PBXGroup;
 			children = (
-				FF3EA8B91D2679B600AFB8B4 /* AppDelegate.swift */,
-				FF3EA8BB1D2679B600AFB8B4 /* ViewController.swift */,
-				FF3EA8BD1D2679B600AFB8B4 /* Main.storyboard */,
-				FF3EA8C01D2679B600AFB8B4 /* Assets.xcassets */,
-				FF3EA8C21D2679B600AFB8B4 /* LaunchScreen.storyboard */,
-				FF3EA8C51D2679B600AFB8B4 /* Info.plist */,
+				FF04A8261D29FD3600CD539C /* APIConfig */,
+				FF04A8251D29FC2200CD539C /* class */,
+				FF04A8241D29FB7500CD539C /* file */,
 			);
 			path = BookShop;
 			sourceTree = "<group>";
@@ -211,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF04A8281D29FD6600CD539C /* apiConfig.swift in Sources */,
 				FF3EA8BC1D2679B600AFB8B4 /* ViewController.swift in Sources */,
 				FF3EA8BA1D2679B600AFB8B4 /* AppDelegate.swift in Sources */,
 			);
