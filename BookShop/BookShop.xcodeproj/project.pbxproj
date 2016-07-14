@@ -14,6 +14,8 @@
 		FF3EA8BF1D2679B600AFB8B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3EA8BD1D2679B600AFB8B4 /* Main.storyboard */; };
 		FF3EA8C11D2679B600AFB8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3EA8C01D2679B600AFB8B4 /* Assets.xcassets */; };
 		FF3EA8C41D2679B600AFB8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3EA8C21D2679B600AFB8B4 /* LaunchScreen.storyboard */; };
+		FF55248C1D378A66000C2939 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55248B1D378A66000C2939 /* UIViewExtention.swift */; };
+		FF5524901D378A6E000C2939 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = FF55248F1D378A6E000C2939 /* UIView+Corner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		FF3EA8C01D2679B600AFB8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF3EA8C31D2679B600AFB8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF3EA8C51D2679B600AFB8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF55248B1D378A66000C2939 /* UIViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		FF55248D1D378A6D000C2939 /* BookShop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookShop-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF55248E1D378A6E000C2939 /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
+		FF55248F1D378A6E000C2939 /* UIView+Corner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +70,12 @@
 		FF04A8251D29FC2200CD539C /* class */ = {
 			isa = PBXGroup;
 			children = (
+				FF55248E1D378A6E000C2939 /* UIView+Corner.h */,
+				FF55248F1D378A6E000C2939 /* UIView+Corner.m */,
+				FF55248B1D378A66000C2939 /* UIViewExtention.swift */,
 				FF3EA8B91D2679B600AFB8B4 /* AppDelegate.swift */,
 				FF3EA8BB1D2679B600AFB8B4 /* ViewController.swift */,
+				FF55248D1D378A6D000C2939 /* BookShop-Bridging-Header.h */,
 			);
 			name = class;
 			sourceTree = "<group>";
@@ -151,6 +161,7 @@
 					FF3EA8B51D2679B600AFB8B4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = B6U4ZP9HHK;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -241,6 +252,8 @@
 				FF04A8281D29FD6600CD539C /* apiConfig.swift in Sources */,
 				FF3EA8BC1D2679B600AFB8B4 /* ViewController.swift in Sources */,
 				FF3EA8BA1D2679B600AFB8B4 /* AppDelegate.swift in Sources */,
+				FF55248C1D378A66000C2939 /* UIViewExtention.swift in Sources */,
+				FF5524901D378A6E000C2939 /* UIView+Corner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,11 +367,15 @@
 			baseConfigurationReference = 74BEAC5A1B43AC538A79BA3C /* Pods-BookShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BookShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.summer.BookShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookShop/BookShop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,11 +384,14 @@
 			baseConfigurationReference = 181A44AC4E0679001921F8D9 /* Pods-BookShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BookShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.summer.BookShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookShop/BookShop-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
